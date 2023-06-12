@@ -44,7 +44,7 @@
 
 buildPythonPackage rec {
   pname = "poetry";
-  version = "1.4.2";
+  version = "1.5.1";
   format = "pyproject";
 
   disabled = pythonOlder "3.7";

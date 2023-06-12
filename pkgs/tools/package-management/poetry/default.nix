@@ -10,7 +10,7 @@ let
 
       # version overrides required by poetry and its plugins
       platformdirs = super.platformdirs.overridePythonAttrs (old: rec {
-        version = "2.6.2";
+        version = "3.5.1";
         src = fetchFromGitHub {
           owner = "platformdirs";
           repo = "platformdirs";
@@ -20,7 +20,7 @@ let
         SETUPTOOLS_SCM_PRETEND_VERSION = version;
       });
       poetry-core = super.poetry-core.overridePythonAttrs (old: rec {
-        version = "1.5.2";
+        version = "1.6.1";
         src = fetchFromGitHub {
           owner = "python-poetry";
           repo = "poetry-core";
